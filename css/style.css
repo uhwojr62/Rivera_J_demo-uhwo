@@ -1,0 +1,143 @@
+:root {
+  --main-color: #77A2D9;  
+  --about-bg: #77A2D9;
+  --footer-bg: #C2B9E0;
+  --button-color: #77A2D9;        /* change this for all non-white buttons */
+  --button-hover-color: #3d669a;  /* darker shade for hover */
+  --text-color: #222222;
+  --bg-color: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-family: 'Hedvig Letters Serif', serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* Have title */
+.navbar-brand {
+  font-family: 'Hedvig Letters Serif', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+
+ /* Hero */
+.hero {
+  background-color: var(--main-color);   /* fallback if the image doesn't load */
+  background-image: url('../images/heading.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  aspect-ratio: 1724 / 960;  
+  min-height: 300px;         
+
+  display: flex;
+  align-items: center;        
+  justify-content: center;
+  padding: 0;                 
+  color: black;
+}
+
+/* Sections */
+.projects,
+.about-me,
+.contact {
+  padding: 60px 0;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--button-hover-color);
+  border-color: var(--button-hover-color);
+  color: white;
+}
+
+/* Cards */
+.card {
+  border: none;
+}
+
+a:has(.card) {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.kicker {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* About me */
+.about-me {
+  background-color: var(--about-bg);
+}
+
+.about-me h1,
+.about-me p {
+  color: white;
+}
+
+/* About me button */
+.about-me .btn-primary {
+  background-color: white;
+  color: var(--about-bg);
+  border-color: white;
+}
+
+.about-me .btn-primary:hover {
+  background-color: #f0f0f0;
+  color: var(--about-bg);
+  border-color: #f0f0f0;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 600px;
+}
+
+/* Footer */
+.footer {
+  padding: 24px 0;
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
