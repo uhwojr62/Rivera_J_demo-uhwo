@@ -41,7 +41,7 @@ p {
  /* Hero */
 .hero {
   background-color: var(--main-color);   /* fallback if the image doesn't load */
-  background-image: url('../images/heading.jpg');
+  background-image: url('../images/Heading.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
